@@ -1,8 +1,12 @@
+import HomeScreen from "../src/components/homeScreen/home"
+import DivideLine from "../src/components/divideLine/divideLine"
 export default function Home() {
   return (
     <>
     <div>
-      <h1>메인페이지</h1>
+      <HomeScreen/>
+      <DivideLine title={'메 뉴'} />
+
     </div>
     </>
   )

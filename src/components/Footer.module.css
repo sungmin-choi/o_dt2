@@ -1,0 +1,21 @@
+.FooterWrapper {
+  padding: 6px;
+  background-color: #02943f;
+  height: 120px;
+  text-align: center;
+  color: azure;
+  padding-bottom: 30px;
+}
+.FacebookIcon,
+.InstagramIcon {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.FacebookIcon:hover {
+  color: #3867d6;
+}
+
+.InstagramIcon:hover {
+  color: rgb(221, 42, 123);
+}

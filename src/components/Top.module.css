@@ -1,0 +1,39 @@
+.HeadWrapper {
+  width: 100% !important;
+  position: fixed !important;
+  margin-bottom: 0 !important;
+  background: #02943f !important;
+  height: 70px !important;
+}
+.FacebookIcon,
+.InstagramIcon {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.FacebookIcon:hover {
+  color: #3867d6;
+}
+
+.InstagramIcon:hover {
+  color: rgb(221, 42, 123);
+}
+
+.title {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  padding: 13px;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bars {
+  position: absolute;
+  top: 1.8rem;
+  left: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bars:hover {
+  transform: scale(1.2);
+}
