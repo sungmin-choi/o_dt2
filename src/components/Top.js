@@ -9,7 +9,7 @@ const Top = () => {
   const [isShowList, setIsShowList] = useState(false);
   useEffect(()=>{
     const setResponsiveness = () => {
-      return window.innerWidth < 800
+      return window.innerWidth < 900
         ? setIsMobileView(true)
         : (setIsMobileView(false),setIsShowList(false));
     };
