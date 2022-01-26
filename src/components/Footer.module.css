@@ -14,8 +14,10 @@
 }
 .FacebookIcon:hover {
   color: #3867d6;
+  transform: scale(1.2);
 }
 
 .InstagramIcon:hover {
   color: rgb(221, 42, 123);
+  transform: scale(1.2);
 }

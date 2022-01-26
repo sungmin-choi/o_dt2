@@ -1,0 +1,19 @@
+.container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.ImageBox {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.ImageBox:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 950px) {
+  .container {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
