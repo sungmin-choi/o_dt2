@@ -1,0 +1,20 @@
+{
+  "name": "o_dt2_client_server",
+  "version": "1.0.0",
+  "description": "o_dt2_client_server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sungmin-choi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+}

@@ -6,9 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Top from '../src/components/Top'
 import Footer from '../src/components/Footer'
+import React from 'react';
 function MyApp({ Component, pageProps }) {
   return (
-  <>
+    <>
     <Head>
       <title>오 듯</title>
       <meta name="viewport" content="width=device-width"/>
