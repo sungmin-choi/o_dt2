@@ -22,8 +22,7 @@
 }
 .title {
   font-family: 'Mochiy Pop P One', sans-serif;
-  padding: 13px;
-  margin-bottom: 20px;
+  padding-bottom: 0px;
   display: block;
   font-size: 70px;
   font-weight: 900;

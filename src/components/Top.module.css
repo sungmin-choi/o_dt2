@@ -1,7 +1,7 @@
 .HeadWrapper {
   width: 100% !important;
   position: fixed !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0px !important;
   background: #02943f !important;
   height: 70px !important;
   z-index: 1000 !important;
@@ -23,7 +23,6 @@
 }
 .title {
   font-family: 'Mochiy Pop P One', sans-serif;
-  padding: 13px;
   display: block;
   font-size: 30px;
   font-weight: 700;

@@ -2,6 +2,7 @@ import HomeScreen from "../src/components/homeScreen/home"
 import DivideLine from "../src/components/divideLine/divideLine"
 import MenuComponent from "../src/components/menu/menu"
 import Introduce from "../src/components/introduce/introduce"
+import Reservation from "../src/components/reservation/reservation"
 import Blogs from "../src/components/blogs/blogs"
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -20,6 +21,8 @@ export default function Home() {
       <HomeScreen/>
       <DivideLine title={'메 뉴'} />
       <MenuComponent />
+      <DivideLine title={'예 약'} />
+      <Reservation />
       <DivideLine title={'매장 소개'} />
       <Introduce/>
       <DivideLine title={'블로그'} />

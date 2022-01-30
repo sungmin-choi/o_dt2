@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Top from '../src/components/Top'
 import Footer from '../src/components/Footer'
 import React from 'react';
+import 'antd/dist/antd.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
