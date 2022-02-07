@@ -20,7 +20,6 @@ function MyApp({ Component, pageProps }) {
       <meta name="keywords" content="오듯,강문오듯,강문해변,보일링씨푸드,해산물술집,강릉맛집,강문해변오듯"/>
       <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}`} ></script>
     </Head>
-    <Top/>
   <Component {...pageProps} />
   <Footer/>
   </>

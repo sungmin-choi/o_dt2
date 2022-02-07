@@ -32,3 +32,13 @@
   height: 300px;
   margin-bottom: 25px;
 }
+.rsBtn {
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #5ee88c;
+  color: aliceblue;
+  width: 270px;
+  height: 47px;
+  border: 1px solid #5ee88c;
+}

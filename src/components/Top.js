@@ -2,11 +2,14 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Menu, Segment, Icon } from 'semantic-ui-react'
 import BarList from './barList/BarList';
 import styles from './Top.module.css';
+import { useRouter } from 'next/router';
 
 const Top = () => {
+  const router = useRouter();
   const [activeItem , setActiveItem] = useState('홈');
   const [isMobileView,setIsMobileView] = useState(false);
   const [isShowList, setIsShowList] = useState(false);
+  
   useEffect(()=>{
     const setResponsiveness = () => {
       return window.innerWidth < 900
@@ -22,7 +25,15 @@ const Top = () => {
   },[])
   
   const onClick = useCallback((e,data)=>{   
-      setActiveItem(data.name);
+      const name = data.name;
+      setActiveItem(name);
+      if(name === '메 뉴'){
+        router.push('/#menuPos')
+      }else if(name === '블로그'){
+        router.push('/#blogPos')
+      }else if(name === '매장소개'){
+        router.push('/#introducePos')
+      }
   },[]);
 
   const showNavbar = useCallback(()=>{
@@ -42,11 +53,6 @@ const Top = () => {
           <Menu.Item
             name='홈'
             active={activeItem === '홈'}
-            onClick={onClick}
-          />
-          <Menu.Item
-            name='예 약'
-            active={activeItem === '예 약'}
             onClick={onClick}
           />
           <Menu.Item

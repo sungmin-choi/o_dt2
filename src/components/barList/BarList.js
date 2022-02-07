@@ -12,11 +12,6 @@ const BarList = () => {
     </List.Item>
     <List.Item>
       <List.Content>
-        <List.Header>에 약</List.Header>
-      </List.Content>
-    </List.Item>
-    <List.Item>
-      <List.Content>
         <List.Header>매장소개</List.Header>
       </List.Content>
     </List.Item>

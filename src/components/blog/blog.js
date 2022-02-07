@@ -13,7 +13,7 @@ const Blog = ({item}) => {
     </Item.Meta>
     <Item.Description>{item.description}</Item.Description>
     <Item.Extra>
-        {item.tags.map((tag)=> {return <Label key={`tag${item.id}`}>{tag}</Label>})}
+        {item.tags.map((tag,i)=> {return <Label key={`${i}tag${item.id}`}>{tag}</Label>})}
     </Item.Extra>
     </Item.Content>
     </Item>
