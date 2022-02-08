@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 
 const Top = () => {
   const router = useRouter();
-  const [activeItem , setActiveItem] = useState('홈');
   const [isMobileView,setIsMobileView] = useState(false);
   const [isShowList, setIsShowList] = useState(false);
   
@@ -26,7 +25,6 @@ const Top = () => {
   
   const onClick = useCallback((e,data)=>{   
       const name = data.name;
-      setActiveItem(name);
       if(name === '메 뉴'){
         router.push('/#menuPos')
       }else if(name === '블로그'){
@@ -51,23 +49,15 @@ const Top = () => {
       {!isMobileView && 
           <>
           <Menu.Item
-            name='홈'
-            active={activeItem === '홈'}
-            onClick={onClick}
-          />
-          <Menu.Item
             name='매장소개'
-            active={activeItem === '매장소개'}
             onClick={onClick}
           />
           <Menu.Item
             name='메 뉴'
-            active={activeItem === '메 뉴'}
             onClick={onClick}
           />
           <Menu.Item
             name='블로그'
-            active={activeItem === '블로그'}
             onClick={onClick}
           />
           </>
