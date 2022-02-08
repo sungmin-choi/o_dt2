@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
     <div>
-      <div id='topPos'>
+      <div id='menuBar'>
       <Top />
       </div>
       <HomeScreen/>

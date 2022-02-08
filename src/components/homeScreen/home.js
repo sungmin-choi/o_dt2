@@ -6,9 +6,8 @@ const HomeScreen = () => {
         if(document.querySelector("#menuBar")){
             let menuHeight = document.querySelector("#menuBar").offsetHeight;
             let location = document.querySelector("#introducePos").offsetTop;
-            window.scrollTo({top:location - menuHeight, behavior:'smooth'});
+            window.scrollTo({top:location - menuHeight-57, behavior:'smooth'});
         }
-    
      }
     return(
         <main className={styles.main} style={{backgroundImage:'url(/image/restaurant.jpg)'}}>

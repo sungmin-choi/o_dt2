@@ -22,15 +22,23 @@ const Top = () => {
       window.removeEventListener('scroll',()=>setIsShowList(false))
     )
   },[])
-  
+const handlePos=(ele)=>{
+    if(document.querySelector("#menuBar")){
+        let menuHeight = document.querySelector("#menuBar").offsetHeight;
+        let location = document.querySelector(ele).offsetTop;
+        window.scrollTo({top:location - menuHeight-57, behavior:'smooth'});
+    }
+ }
   const onClick = useCallback((e,data)=>{   
       const name = data.name;
       if(name === '메 뉴'){
-        router.push('/#menuPos')
+        handlePos('#menuPos')
       }else if(name === '블로그'){
-        router.push('/#blogPos')
+        handlePos('#blogPos')
       }else if(name === '매장소개'){
-        router.push('/#introducePos')
+        handlePos('#introducePos')
+      }else if(name === '홈'){
+        handlePos('#menuBar')
       }
   },[]);
 
@@ -48,6 +56,10 @@ const Top = () => {
       </div>
       {!isMobileView && 
           <>
+          <Menu.Item
+            name='홈'
+            onClick={onClick}
+          />
           <Menu.Item
             name='매장소개'
             onClick={onClick}

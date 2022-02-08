@@ -2,7 +2,9 @@
   width: 100% !important;
   margin-bottom: 0px !important;
   background: #02943f !important;
+  position: fixed !important;
   height: 70px !important;
+  z-index: 300;
 }
 .FacebookIcon,
 .InstagramIcon {
