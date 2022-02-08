@@ -6,16 +6,22 @@ import Blogs from "../src/components/blogs/blogs"
 import Top from "../src/components/Top"
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
+import {Loader} from "semantic-ui-react"
+
+
 
 export default function Home() {
   const [blogs,setBlogs] = useState([]);
+  const [isLoading,setIsLoading] = useState(true);
   const getNaverScript = async()=>{
     return await axios.get('https://odt2.herokuapp.com/');
   }
   
-  useEffect(()=>{
-
-    getNaverScript().then(result=>setBlogs(result.data));
+  useEffect(async()=>{
+    console.log(isLoading);
+    await getNaverScript()
+    .then(result=>setBlogs(result.data))
+    setIsLoading(false);
   },[]);
   return (
     <>
@@ -35,7 +41,13 @@ export default function Home() {
       <div id='blogPos'>
       <DivideLine id='blogPos' name='blog' title={'블로그'} />
       </div>
-      <Blogs items={blogs}/>
+      {isLoading ?
+        <div style={{padding: '100px 0'}}>
+            <Loader inline='centered' active size='large'>블로그 불러오는중...</Loader>
+        </div>:
+        <Blogs items={blogs}/>
+      }
+      
     </div>
     </>
   )
