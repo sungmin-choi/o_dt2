@@ -60,6 +60,4 @@ app.get('/search/blog', function (req, res) {
     });
   });
 
-app.listen(port, ()=>{
-    console.log(`app listening at http://localhost:${port}`);
-})
+app.listen(process.env.PORT || 3000);

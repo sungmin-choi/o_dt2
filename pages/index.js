@@ -10,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
 export default function Home() {
   const [blogs,setBlogs] = useState([]);
   const getNaverScript = async()=>{
-    return await axios.get('http://localhost:3065');
+    return await axios.get('https://odt2.herokuapp.com/');
   }
   
   useEffect(()=>{
