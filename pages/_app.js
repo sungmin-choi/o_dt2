@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="http://localhost:3000/"/>
       <meta property="og:site_name" content="오 듯"/>
+      <meta property="og:image" content="/logo.jpg"/>
       <meta property="og:locale" content="utf-8"/>
       <meta property="og:title" content="강문 오듯 :: 강문 해산물보일링 강문 술집" />
       <meta property="og:description" content="강문해변가 라인에 위치해있으며 오리카페와 팡파미유강문점 사이에 있는 유리로 된 건물입니다~ 

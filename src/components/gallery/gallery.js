@@ -5,8 +5,8 @@ import { Grid, Image } from 'semantic-ui-react'
 const Gallery = ({imageZoom,setCurrentImage}) => {
 
   const onClick = useCallback((e)=>{
+    setCurrentImage(() => Number(e.target.id)-1);
     imageZoom();
-    setCurrentImage(Number(e.target.id)-1);
   },[])
   
   return <div className={styles.container} >

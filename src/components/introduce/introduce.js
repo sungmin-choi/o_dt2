@@ -7,6 +7,7 @@ import ImagesZoom from '../imagesZoom';
 const Introduce = () => {
     const [showImageZone, setShowImageZone] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
+    
     const imageZoom =useCallback(()=>{
       setShowImageZone(true);
     },[]);

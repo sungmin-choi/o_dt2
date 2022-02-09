@@ -16,7 +16,8 @@ const Global = createGlobalStyle`
 
 
 const ImagesZoom = ({onClose ,currentImage}) => {
-    const [currentSlide,setCurrentSlide] = useState(0);
+    const [currentSlide,setCurrentSlide] = useState(currentImage);
+    
     const settings = {
         dots: true,
         fade: true,

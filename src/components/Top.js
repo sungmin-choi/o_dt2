@@ -5,7 +5,6 @@ import styles from './Top.module.css';
 import { useRouter } from 'next/router';
 
 const Top = () => {
-  const router = useRouter();
   const [isMobileView,setIsMobileView] = useState(false);
   const [isShowList, setIsShowList] = useState(false);
   
