@@ -7,7 +7,7 @@ const port = 3065;
 const client_id = 'j3twM5ZFqD6PVTRKJEj_';
 const client_secret = 'NnrHjl18Wx';
 app.use(cors({  // cors 문제 해결 npm i cors  
-    origin: 'https://o-dt.vercel.app/', // *: 모든도메인 허용
+    origin: 'https://o-dt.vercel.app', // *: 모든도메인 허용
 }));
 
 app.get('/', function(req, res) {
