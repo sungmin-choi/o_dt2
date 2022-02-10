@@ -36,3 +36,5 @@
    > <img src="public/image/md4.png"  width="350" height="270">
 4. 네이버 open API 를 통해서 식당 관련 블로그를 긁어올려고 했으나 받아오는 객체안에 정보들이 너무 부족해서 직접 웹을 크롤링해서 블로그 정보를 가져와서 구혔했다.
    > <img src="public/image/md5.png"  width="350" height="270">
+5. 오픈그래프 메타태그 를 활용하여 kakaotalk 등에 링크 띄우면 사진과 간단한 소개 나오게끔 구현 했습니다
+   > <img src="public/image/md6.png"  width="380" height="300">
