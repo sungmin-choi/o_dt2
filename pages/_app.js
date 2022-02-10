@@ -13,10 +13,11 @@ function MyApp({ Component, pageProps }) {
     <>
     <Head>
       <title>오 듯</title>
+      <link rel="canonical" href="https://o-dt.vercel.app"/>
       <meta name="viewport" content="width=device-width"/>
       <meta charSet="utf-8"/>
-      <meta name="description" content="강문해변가 라인에 위치해있으며 오리카페와 팡파미유강문점 사이에 있는 유리로 된 건물입니다~ 
-      화덕생선구이강문집 바로 앞에 있습니다! 버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다 !술을 부르는 안주를 하는 seafoodrestaurant & pub !!!"></meta>
+      <meta name="description" content="강문해변 라인에 위치해 있으며 강문 오듯 해산물 식당
+      버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다 seafoodrestaurant & pub"></meta>
       <meta name="keywords" content="오듯,강문오듯,강문해변,보일링씨푸드,해산물술집,강릉맛집,강문해변오듯"/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="http://localhost:3000/"/>
@@ -24,8 +25,8 @@ function MyApp({ Component, pageProps }) {
       <meta property="og:image" content="/logo.jpg"/>
       <meta property="og:locale" content="utf-8"/>
       <meta property="og:title" content="강문 오듯 :: 강문 해산물보일링 강문 술집" />
-      <meta property="og:description" content="강문해변가 라인에 위치해있으며 오리카페와 팡파미유강문점 사이에 있는 유리로 된 건물입니다~ 
-      화덕생선구이강문집 바로 앞에 있습니다! 버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다 !술을 부르는 안주를 하는 seafoodrestaurant & pub !!! " />
+      <meta property="og:description" content="강문해변 라인에 위치해 있으며 강문 오듯 해산물 식당
+      버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다 seafoodrestaurant & pub" />
       <meta name="naver-site-verification" content="a9cd66601910de9531887201321e66c382df7d9d" />
       <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}`} ></script>
     </Head>
