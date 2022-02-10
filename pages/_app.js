@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
       <meta property="og:title" content="강문 오듯 :: 강문 해산물보일링 강문 술집" />
       <meta property="og:description" content="강문해변가 라인에 위치해있으며 오리카페와 팡파미유강문점 사이에 있는 유리로 된 건물입니다~ 
       화덕생선구이강문집 바로 앞에 있습니다! 버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다 !술을 부르는 안주를 하는 seafoodrestaurant & pub !!! " />
+      <meta name="naver-site-verification" content="a9cd66601910de9531887201321e66c382df7d9d" />
       <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}`} ></script>
     </Head>
   <Component {...pageProps} />
