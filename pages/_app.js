@@ -12,15 +12,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <title>오 듯</title>
-      <link rel="canonical" href="https://o-dt.vercel.app"/>
+      <title>오 듯 홈페이지</title>
+      <link rel="canonical" href="https://o-dt.vercel.app/"/>
       <meta name="viewport" content="width=device-width"/>
       <meta charSet="utf-8"/>
       <meta name="description" content="강문해변에 위치해 있는 강문 오듯 해산물 식당
       버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다"></meta>
       <meta name="keywords" content="오듯,강문오듯,강문해변,보일링씨푸드,해산물술집,강릉맛집,강문해변오듯"/>
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content="http://localhost:3000/"/>
+      <meta property="og:url" content="https://o-dt.vercel.app/"/>
       <meta property="og:site_name" content="오 듯"/>
       <meta property="og:image" content="/logo.jpg"/>
       <meta property="og:locale" content="utf-8"/>
