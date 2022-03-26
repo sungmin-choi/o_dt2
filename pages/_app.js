@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       버터와 마늘을 볶아 만든 매콤한 미국식 해산물찜입니다" />
       <meta name="naver-site-verification" content="a9cd66601910de9531887201321e66c382df7d9d" />
       <meta name="google-site-verification" content="fdGJ_wf08t03Wn0qij_tfb3T0iA3dMgq0XAnVJzrL4I" />
-      <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_API_KEY}`} ></script>
+      <script type="text/javascript" src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=2ca45dfc0dad5600841ab99dcd9f4508`} ></script>
     </Head>
   <Component {...pageProps} />
   <Footer/>
