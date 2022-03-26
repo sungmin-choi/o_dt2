@@ -3,11 +3,8 @@ const app = express();
 const request = require('request');
 const cheerio = require('cheerio');
 const cors = require('cors');
-const port = 3065;
-const client_id = 'j3twM5ZFqD6PVTRKJEj_';
-const client_secret = 'NnrHjl18Wx';
 app.use(cors({  // cors 문제 해결 npm i cors  
-    origin: 'https://o-dt.vercel.app', // *: 모든도메인 허용
+    origin: 'https://o-dt.vercel.app'// *: 모든도메인 허용
 }));
 
 app.get('/', function(req, res) {
@@ -42,22 +39,6 @@ app.get('/', function(req, res) {
     })
 });
 
-app.get('/search/blog', function (req, res) {
-    const api_url = 'https://openapi.naver.com/v1/search/blog?query=%EA%B0%95%EB%AC%B8+%EC%98%A4%EB%93%AF+%ED%95%B4%EC%82%B0%EB%AC%BC&display=20' // json 결과
- //   var api_url = 'https://openapi.naver.com/v1/search/blog.xml?query=' + encodeURI(req.query.query); // xml 결과
-    const options = {
-        url: api_url,
-        headers: {'X-Naver-Client-Id':client_id, 'X-Naver-Client-Secret': client_secret}
-     };
-    request.get(options, function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        res.writeHead(200, {'Content-Type': 'text/json;charset=utf-8'});
-        res.end(body);
-      } else {
-        res.status(response.statusCode).end();
-        console.log('error = ' + response.statusCode);
-      }
-    });
-  });
+
 
 app.listen(process.env.PORT || 3000);
