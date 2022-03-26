@@ -10,7 +10,7 @@ const HomeScreen = () => {
         }
      }
     return(
-        <main className={styles.main} style={{backgroundImage:'url(/image/restaurant.jpg)'}}>
+        <main className={styles.main} style={{backgroundImage:'url(/image/8.jpeg)'}}>
             <div className={styles.titlebox}>
                 <span className={styles.title}>{`o'dt`}</span>
                 <span className={styles.description}>퓨전 해산물 레스토랑 <br />싱그러운  메뉴들로 분위기 있는 감성포차</span>
