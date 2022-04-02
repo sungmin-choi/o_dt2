@@ -51,7 +51,7 @@ const Introduce = () => {
                 </a>
             </button>
             <Gallery imageZoom={imageZoom} setCurrentImage={setCurrentImage} />
-            <div className={styles.detail}>
+            <article className={styles.detail}>
                 <div className={styles.address}>
                     <h2>주소</h2> 강릉시 창해로 <br />
                     350번길21-1 오듯
@@ -62,7 +62,7 @@ const Introduce = () => {
                     <br />
                     수요일 휴무{' '}
                 </div>
-            </div>
+            </article>
             <h2>오시는길</h2>
             <div
                 id="kakaomap"
